@@ -12,7 +12,10 @@ import com.razorpay.Order;
 import com.razorpay.RazorpayClient;
 import com.razorpay.RazorpayException;
 import com.razorpay.Utils;
+import com.tunehub.entities.Users;
 import com.tunehub.services.UsersService;
+
+import jakarta.servlet.http.HttpSession;
 
 @Controller
 public class PaymentController 
@@ -25,6 +28,20 @@ public class PaymentController
 	public String pay() 
 	{
 		return "pay";
+	}
+	
+	@GetMapping("/payment-success")
+	public String paymentSuccess(HttpSession session) {
+		String mail =  (String) session.getAttribute("email");
+		Users u = service.getUser(mail);
+		u.setPremium(true);
+		service.updateUser(u);
+		return "customerHome";
+	}
+	
+	@GetMapping("/payment-failure")
+	public String paymentFailure() {
+		return "customerHome";
 	}
 	
 	@SuppressWarnings("finally")
