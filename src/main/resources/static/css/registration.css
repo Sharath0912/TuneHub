@@ -1,0 +1,44 @@
+div {
+	display: flex;
+	justify-content: center;
+}
+
+h1 {
+	text-align: center;
+	text-shadow: 0 0 20px black;
+	color: white;
+	font-size: 
+}
+
+body {
+	background: linear-gradient(to right, red, yellow);
+}
+
+button:hover {
+	background-color: grey;
+	color: blue;
+}
+
+button {
+	border: solid 1px white;
+	background: transparent;
+	font-size: 25px;
+	padding: 5px;
+	border-radius: 10px;
+	transition: .5s;
+	align-content: center;
+}
+
+form {
+	border: solid 2px white;
+	padding: 8px;
+	font-size: 18px;
+	font-weight: bold;
+	box-shadow: 0 0 10px;
+}
+
+textarea {
+	width: 70%;
+	padding: 0.5rem;
+	margin-top: 0.5rem;
+}

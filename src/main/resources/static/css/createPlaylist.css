@@ -1,0 +1,42 @@
+body {
+	background: linear-gradient(to right, red, yellow);
+}
+h1 {
+	text-align: center;
+	text-shadow: 0 0 20px black;
+	color: white;
+	font-size: 30px
+}
+h2 {
+	text-align: center;
+	color: black;
+	font-size: 30px
+}
+.container{
+	display: flex;
+	justify-content: center;
+}
+form{
+	border: solid 2px white; 
+	padding: 15px;
+	border-radius: 8%;
+	font-size: 18px;
+	box-shadow: 0 0 10px black;
+}
+
+div{
+	padding: 5px;
+}
+button {
+	border: solid 1px black;
+	background: transparent;
+	font-size: 20px;
+	padding: 5px;
+	border-radius: 10px;
+	transition: .5s;
+}
+
+button:hover {
+	background-color: grey;
+	color: white;
+}

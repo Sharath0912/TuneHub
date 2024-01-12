@@ -1,0 +1,36 @@
+body {
+	background: linear-gradient(to right, red, yellow);
+	margin-top: 5cm;
+}
+
+h1 {
+	text-align: center;
+	text-shadow: 0 0 20px black;
+	color: white;
+	font-size: 30px
+}
+.container{
+	display: flex;
+	justify-content: center;
+}
+form{
+	border: solid 2px white; 
+	padding: 15px;
+	border-radius: 8%;
+	font-size: 18px;
+	box-shadow: 0 0 10px black;
+}
+button:hover {
+	background-color: grey;
+	color: yellow;
+}
+
+button {
+	border: solid 1px white;
+	background: transparent;
+	font-size: 25px;
+	padding: 5px;
+	border-radius: 10px;
+	transition: .5s;
+	align-content: center;
+}

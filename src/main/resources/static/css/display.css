@@ -1,0 +1,56 @@
+body {
+	background: linear-gradient(to right, red, yellow);
+	font-size: 18px;
+	height: 100vh;
+	text-align: center;
+}
+
+button:hover {
+	background-color: grey;
+	color: blue;
+}
+
+button {
+	border: solid 1px white;
+	background: transparent;
+	font-size: 25px;
+	padding: 4px;
+	border-radius: 10px;
+	transition: .5s;
+	align-content: center;
+}
+
+a {
+	padding: 7px;
+}
+
+h1 {
+	text-align: center;
+	text-shadow: 0 0 20px black;
+	color: white;
+	font-size: 40px;
+}
+.navbar {
+	margin: auto;
+	width: 90%;
+	border: 1px solid white;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 0 0 10px black;
+	padding: 5px
+}
+
+.navbar a {
+	float: right;
+	color: white;
+	text-shadow: 0 0 1px white;
+	padding: 15px;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.navbar a:hover {
+	background-color: #ddd;
+	color: black;
+	border-radius: 25px;
+}
